@@ -1,0 +1,1380 @@
+02-Nov-2020 00:22:54.128 심각 [http-nio-8219-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 02:05:09.640 심각 [http-nio-8219-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/MyPage/MyClass_jsp.java]
+Only a type can be imported. myclass.MyclassBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/MyPage/MyClass_jsp.java]
+Only a type can be imported. myclass.Myclass resolves to a package
+
+An error occurred at line: 28 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+25: //	String entryYn ="N";
+26: 	
+27: 	//가입한 클래스
+28: 	Myclass myclass= new Myclass();
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+
+
+An error occurred at line: 28 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+25: //	String entryYn ="N";
+26: 	
+27: 	//가입한 클래스
+28: 	Myclass myclass= new Myclass();
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+
+
+An error occurred at line: 32 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+
+
+An error occurred at line: 32 in the jsp file: /MyPage/MyClass.jsp
+MyclassBean cannot be resolved
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+
+
+An error occurred at line: 35 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+
+
+An error occurred at line: 35 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+
+
+An error occurred at line: 39 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+39: 	ArrayList<Myclass> likePro = MyclassBean.getInstance().getMyclass(myclass);
+40: %>
+41: 		<script>
+42: 		$(document).ready(function(){
+
+
+An error occurred at line: 39 in the jsp file: /MyPage/MyClass.jsp
+MyclassBean cannot be resolved
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+39: 	ArrayList<Myclass> likePro = MyclassBean.getInstance().getMyclass(myclass);
+40: %>
+41: 		<script>
+42: 		$(document).ready(function(){
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/MyPage/MyClass_jsp.java]
+Only a type can be imported. myclass.MyclassBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/MyPage/MyClass_jsp.java]
+Only a type can be imported. myclass.Myclass resolves to a package
+
+An error occurred at line: 28 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+25: //	String entryYn ="N";
+26: 	
+27: 	//가입한 클래스
+28: 	Myclass myclass= new Myclass();
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+
+
+An error occurred at line: 28 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+25: //	String entryYn ="N";
+26: 	
+27: 	//가입한 클래스
+28: 	Myclass myclass= new Myclass();
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+
+
+An error occurred at line: 32 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+
+
+An error occurred at line: 32 in the jsp file: /MyPage/MyClass.jsp
+MyclassBean cannot be resolved
+29: 	myclass.setId(id);
+30: 	myclass.setClass_id(class_id);
+31: 	myclass.setEntry_yn("Y");
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+
+
+An error occurred at line: 35 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+
+
+An error occurred at line: 35 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+32: 	ArrayList<Myclass> entryPro = MyclassBean.getInstance().getMyclass(myclass);
+33: 
+34: 	//좋아요한 클래스
+35: 	Myclass myclass2= new Myclass();
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+
+
+An error occurred at line: 39 in the jsp file: /MyPage/MyClass.jsp
+Myclass cannot be resolved to a type
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+39: 	ArrayList<Myclass> likePro = MyclassBean.getInstance().getMyclass(myclass);
+40: %>
+41: 		<script>
+42: 		$(document).ready(function(){
+
+
+An error occurred at line: 39 in the jsp file: /MyPage/MyClass.jsp
+MyclassBean cannot be resolved
+36: 	myclass.setId(id);
+37: 	myclass.setClass_id(class_id);
+38: 	myclass.setLike_yn("Y");
+39: 	ArrayList<Myclass> likePro = MyclassBean.getInstance().getMyclass(myclass);
+40: %>
+41: 		<script>
+42: 		$(document).ready(function(){
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 02:05:32.286 심각 [http-nio-8219-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 02:05:36.604 심각 [http-nio-8219-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 02:05:42.357 심각 [http-nio-8219-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/community/infoboard/info_005fboard_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 26 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+23:     int endRow = currentPage * pageSize;
+24:     int count = 0;
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved to a type
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 28 in the jsp file: /community/infoboard/info_board.jsp
+BoardDBBean cannot be resolved
+25:     int number = 0;
+26:     List<BoardDataBean> articleList = null; 
+27:     
+28:     BoardDBBean dbPro = BoardDBBean.getInstance();
+29:     String boardType="info";
+30: 	String keyField="";
+31: 	String keyword="";
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 139 in the jsp file: /community/infoboard/info_board.jsp
+BoardDataBean cannot be resolved to a type
+136: 			    </tr>
+137: 			<%  
+138: 			   for (int i = 0; i < articleList.size() ; i++) {
+139: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+140: 			%>
+141: 			   <tr height="30">
+142: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 02:05:45.214 심각 [http-nio-8219-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Q_0026Aboard/Q_0026A_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Q_0026Aboard/Q_0026A_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int count = 0;
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+
+
+An error occurred at line: 26 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDBBean cannot be resolved to a type
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+29: 	String keyField="";
+
+
+An error occurred at line: 26 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDBBean cannot be resolved
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+29: 	String keyField="";
+
+
+An error occurred at line: 142 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+139: 			    </tr>
+140: 			<%  
+141: 			   for (int i = 0; i < articleList.size(); i++) {
+142: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+143: 			%>
+144: 			  	 <tr height="30">
+145: 			    	<td width="50" > <%=number--%></td>
+
+
+An error occurred at line: 142 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+139: 			    </tr>
+140: 			<%  
+141: 			   for (int i = 0; i < articleList.size(); i++) {
+142: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+143: 			%>
+144: 			  	 <tr height="30">
+145: 			    	<td width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Q_0026Aboard/Q_0026A_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Q_0026Aboard/Q_0026A_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int count = 0;
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+
+
+An error occurred at line: 26 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDBBean cannot be resolved to a type
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+29: 	String keyField="";
+
+
+An error occurred at line: 26 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDBBean cannot be resolved
+23: 	int number = 0;
+24: 	
+25: 	List<BoardDataBean> articleList = null; 
+26: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+27: 	
+28: 	String boardType="qna";
+29: 	String keyField="";
+
+
+An error occurred at line: 142 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+139: 			    </tr>
+140: 			<%  
+141: 			   for (int i = 0; i < articleList.size(); i++) {
+142: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+143: 			%>
+144: 			  	 <tr height="30">
+145: 			    	<td width="50" > <%=number--%></td>
+
+
+An error occurred at line: 142 in the jsp file: /ServiceCenter/Q&Aboard/Q&A.jsp
+BoardDataBean cannot be resolved to a type
+139: 			    </tr>
+140: 			<%  
+141: 			   for (int i = 0; i < articleList.size(); i++) {
+142: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+143: 			%>
+144: 			  	 <tr height="30">
+145: 			    	<td width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 14:06:01.944 심각 [http-nio-8219-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [/Join/confirmId.jsp (line: 5, column: 0) The value for the useBean class attribute Test.userDB is invalid.] with root cause
+ org.apache.jasper.JasperException: /Join/confirmId.jsp (line: 5, column: 0) The value for the useBean class attribute Test.userDB is invalid.
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:107)
+	at org.apache.jasper.compiler.Generator$GenerateVisitor.visit(Generator.java:1380)
+	at org.apache.jasper.compiler.Node$UseBean.accept(Node.java:1178)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2376)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2428)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2434)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:464)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2376)
+	at org.apache.jasper.compiler.Generator.generate(Generator.java:3656)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:252)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:358)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 14:07:42.215 심각 [http-nio-8219-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Nov-2020 14:08:04.041 심각 [http-nio-8219-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDBBean resolves to a package
+
+An error occurred at line: [15] in the generated java file: [/qwwa79/tomcat/work/qwwa79/qwwa79.cafe24.com/ROOT/org/apache/jsp/ServiceCenter/Noticeboard/notice_jsp.java]
+Only a type can be imported. board.BoardDataBean resolves to a package
+
+An error occurred at line: 25 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+22: 	int endRow = currentPage * pageSize;
+23: 	int count = 0;
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved to a type
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 27 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDBBean cannot be resolved
+24: 	int number = 0;
+25: 	List<BoardDataBean> articleList = null; 
+26: 	
+27: 	BoardDBBean dbPro = BoardDBBean.getInstance();
+28: 	
+29: 	String boardType="notice";
+30: 	String keyField="";
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+An error occurred at line: 148 in the jsp file: /ServiceCenter/Noticeboard/notice.jsp
+BoardDataBean cannot be resolved to a type
+145: 			    </tr>
+146: 			<%  
+147: 			   for (int i = 0; i < articleList.size() ; i++) {
+148: 			       BoardDataBean article = (BoardDataBean)articleList.get(i);
+149: 			%>
+150: 			   <tr height="30">
+151: 			    <td  width="50" > <%=number--%></td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
