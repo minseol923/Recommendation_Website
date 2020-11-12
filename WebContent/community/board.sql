@@ -1,5 +1,5 @@
 create table board(
-     num int not null primary key 
+     num int not null primary key,
      writer varchar(10) not null,
      subject varchar(50) not null,
      email varchar(50),
@@ -9,5 +9,5 @@ create table board(
      ref int not null,
      re_step int not null,
     re_level int not null,
-     content text not null
+     content text not null,
      boardType varchar(50));

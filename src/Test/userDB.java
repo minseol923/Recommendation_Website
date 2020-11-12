@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 
 public class userDB {
 	private static userDB instance =new userDB();
-	private Connection conn; // connection:db에접근하게 해주는 객체
+	private Connection conn; 
 	private PreparedStatement pstmt;
 	private ResultSet rs;
 	private Statement ds; 
@@ -30,12 +30,12 @@ public class userDB {
 	    	PreparedStatement pstmt=null;
 	    	
 	    	String jdbc_driver = "com.mysql.cj.jdbc.Driver";
-	    	String jdbc_url  = "jdbc:mysql://localhost:3306/bdbjsp?characterEncoding=UTF-8&serverTimezone=UTC";
+	    	String jdbc_url  = "jdbc:mysql://localhost/qwwa79?characterEncoding=UTF-8&serverTimezone=UTC";
 	    	
 	    	
 	    		try {
 	    			Class.forName(jdbc_driver);
-	    			conn=DriverManager.getConnection(jdbc_url,"root","1234");
+	    			conn=DriverManager.getConnection(jdbc_url,"qwwa79","kimju853!");
 	    			
     		} catch (Exception e) {
     			// TODO Auto-generated catch block
@@ -46,7 +46,7 @@ public class userDB {
         return conn;
     }
 	
-	//로그인메소드
+	
 	public int userCheck(String id, String passwd) {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -61,19 +61,19 @@ public class userDB {
 		
 			if (rs.next()) {
 				if (rs.getString(1).equals(passwd)) {
-					return 1; //성공
+					return 1; //�꽦怨�
 					
 				} else
-					return 0; //비밀번호 불일치
+					return 0; //鍮꾨�踰덊샇 遺덉씪移�
 			}
-			return -1; // 아이디 노
+			return -1; // �븘�씠�뵒 �끂
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return -2; 
 	}
-	//아이디 중복 확인
+	//�븘�씠�뵒 以묐났 �솗�씤
 	public boolean idCheck(String id) {
 		boolean b=false;
         Connection conn = null;
@@ -99,7 +99,7 @@ public class userDB {
         }
 		return b;
 }
-	//회원수정-회원정보 가져오기
+	//�쉶�썝�닔�젙-�쉶�썝�젙蹂� 媛��졇�삤湲�
 	public user getData(String id){
 
 		user use = null;
@@ -137,7 +137,7 @@ public class userDB {
 		return use;
 	}
 	
-	//회원정보 수정하기 -찐수정
+	//�쉶�썝�젙蹂� �닔�젙�븯湲� -李먯닔�젙
 		public boolean modifyData(user bean){
 			
 			Connection conn = null;
@@ -172,7 +172,7 @@ public class userDB {
 			return b;
 		}
 		
-		//회원 탈퇴 - 비밀번호 확인
+		//�쉶�썝 �깉�눜 - 鍮꾨�踰덊샇 �솗�씤
 
 		public boolean deleteConfirm(String id, String passwd){
 
@@ -216,7 +216,7 @@ public class userDB {
 			return b;
 		}
 
-		//회원 탈퇴 - 탈퇴하기
+		//�쉶�썝 �깉�눜 - �깉�눜�븯湲�
 		public boolean deleteData(String id){
 			 Connection conn = null;
 		     PreparedStatement pstmt = null;
@@ -245,7 +245,7 @@ public class userDB {
 		}
 		
 
-		///관리자페이지 회원 목록 /////
+		///愿�由ъ옄�럹�씠吏� �쉶�썝 紐⑸줉 /////
 		public ArrayList<user> getMemberAll(int start, int end,String keyField,String keyword) throws Exception {
 			 Connection conn = null;
 		     PreparedStatement pstmt = null;
@@ -292,7 +292,7 @@ public class userDB {
 				return memberList;
 			}
 
-//회원목록 수
+//�쉶�썝紐⑸줉 �닔
 		public int getUserListCount() throws Exception {
 	        Connection conn = null;
 	        PreparedStatement pstmt = null;
